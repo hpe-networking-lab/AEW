@@ -8,7 +8,7 @@ sys.path.insert(0,os.path.join(ROOT,"tools"))
 from validate_project_state import validate, load, SCHEMA
 schema=load(SCHEMA)
 found=[p for p in glob.glob("/lab/github/**/Project_State.yaml",recursive=True)
-       if "/ai-engineering-workbench/customer-template/" not in p]
+       if "/customer-template/" not in p]
 bad=0
 print(f"Engagement status board ({len(found)} Project_State file(s)):")
 if not found:
