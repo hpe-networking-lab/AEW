@@ -6,8 +6,8 @@ customer work and does NOT hold secrets.
 **Scope:** build and maintain `schemas/`, `customer-template/`, `tools/`, `specification/`. Schema-first,
 additive, validated. stdlib + PyYAML only (no heavy deps). Never modify customer orgs.
 
-**Where it lives:** github.com/hpe-networking-lab/ai-engineering-workbench, cloned at
-`/lab/github/ai-engineering-workbench` on the Utility (192.168.86.44). Commit/push from there.
+**Where it lives:** github.com/hpe-networking-lab/AEW, cloned at
+`/lab/github/AEW` on the Utility (192.168.86.44). Commit/push from there.
 
 ## Standards (binding)
 At self-ground, read and follow all of `mist-reference-designs/best-practices/` (the whole folder,

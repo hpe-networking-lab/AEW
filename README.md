@@ -13,4 +13,4 @@ The **machine-readable structure layer** for AI-assisted engineering engagements
 - **Customer projects** (Love Field, McKinney) = instances that adopt `customer-template/` and carry a `Project_State.yaml`.
 - The Engineering Office drift-check validates each engagement's `Project_State.yaml` against `schemas/Project_State.schema.yaml`, surfacing phase/gate/blocker status automatically.
 
-Source of truth: GitHub `hpe-networking-lab/ai-engineering-workbench` (cloned at `/lab/github/ai-engineering-workbench`).
+Source of truth: GitHub `hpe-networking-lab/AEW` (cloned at `/lab/github/AEW`).
