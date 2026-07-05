@@ -1,0 +1,75 @@
+# Project_State - canonical engagement-state model (JSON Schema 2020-12, YAML form)
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "https://hpe-networking-lab/aew/schemas/Project_State.schema.yaml"
+title: Project_State
+type: object
+additionalProperties: false
+required: [version, project, customer, current_phase, phases, approval_gates, artifacts, blockers, audit]
+properties:
+  version:
+    type: string
+    examples: ["0.1"]
+  project:
+    type: object
+    additionalProperties: false
+    properties:
+      id: {type: string}
+      name: {type: string}
+      status: {type: string}
+      created_at: {type: string}
+      updated_at: {type: string}
+  customer:
+    type: object
+    additionalProperties: false
+    properties:
+      name: {type: string}
+      industry: {type: string}
+      primary_contact: {type: string}
+  current_phase:
+    type: string
+    enum: ["00_Project","01_Discovery","02_Engineering","03_HLD","04_LLD","05_Mist","06_Config","07_Deployment","08_Review"]
+  phases:
+    type: array
+    items:
+      type: object
+      required: [id, name, status]
+      properties:
+        id: {type: string}
+        name: {type: string}
+        status: {type: string, enum: ["not_started","in_progress","blocked","complete","approved"]}
+  approval_gates:
+    type: array
+    items:
+      type: object
+      required: [id, name, required_for_phase, status]
+      properties:
+        id: {type: string}
+        name: {type: string}
+        required_for_phase: {type: string}
+        status: {type: string, enum: ["not_required","pending","approved","rejected"]}
+  artifacts:
+    type: array
+    items:
+      type: object
+      required: [path, type, status]
+      properties:
+        path: {type: string}
+        type: {type: string}
+        status: {type: string, enum: ["missing","placeholder","draft","review","approved","generated"]}
+  blockers:
+    type: array
+    items:
+      type: object
+      required: [id, description, severity, status]
+      properties:
+        id: {type: string}
+        description: {type: string}
+        severity: {type: string, enum: ["low","medium","high","critical"]}
+        status: {type: string, enum: ["open","resolved","deferred"]}
+  audit:
+    type: object
+    additionalProperties: false
+    properties:
+      created_by: {type: string}
+      last_updated_by: {type: string}
+      last_reviewed_by: {type: string}

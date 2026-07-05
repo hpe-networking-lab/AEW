@@ -1,0 +1,29 @@
+version: "0.1"
+project:
+  id: "PLACEHOLDER"
+  name: "PLACEHOLDER"
+  status: "not_started"
+  created_at: "1970-01-01"
+  updated_at: "1970-01-01"
+customer:
+  name: "PLACEHOLDER"
+  industry: "PLACEHOLDER"
+  primary_contact: "PLACEHOLDER"
+current_phase: "00_Project"
+phases:
+  - {id: "00_Project", name: "Project", status: "not_started"}
+  - {id: "01_Discovery", name: "Discovery", status: "not_started"}
+  - {id: "02_Engineering", name: "Engineering", status: "not_started"}
+  - {id: "03_HLD", name: "HLD", status: "not_started"}
+  - {id: "04_LLD", name: "LLD", status: "not_started"}
+  - {id: "05_Mist", name: "Mist", status: "not_started"}
+  - {id: "06_Config", name: "Config", status: "not_started"}
+  - {id: "07_Deployment", name: "Deployment", status: "not_started"}
+  - {id: "08_Review", name: "Review", status: "not_started"}
+approval_gates: []
+artifacts: []
+blockers: []
+audit:
+  created_by: "PLACEHOLDER"
+  last_updated_by: "PLACEHOLDER"
+  last_reviewed_by: "PLACEHOLDER"
