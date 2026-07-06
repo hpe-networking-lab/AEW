@@ -2,7 +2,7 @@
 
 > Every engagement (and every reusable reference design) produces this documentation package. It is
 > the deliverable set a professional Professional-Services engagement hands a customer, mapped onto the
-> AEW `customer-template/` phases. Exemplars: `mckinney-isd/engagement/` and
+> AEW `customer-template/` phases. Exemplars: `NAC-Starter/examples/sample-engagement/` and
 > `lab-documentation/design/mist-clearpass-guest-coa/`.
 
 ## Required artifacts

@@ -51,7 +51,7 @@ The same operating model and guardrails apply to every workflow below; each has 
 |---|---|---|---|
 | 1 | **Wireless & wired (Mist) design + deploy** | Juniper Mist WLAN/RF/switch design, template rollout, optimization, best-practice audit. | `mist-reference-designs/` (templates + principles); NAC-Starter Phase 1 |
 | 2 | **NAC & guest access** | Network Access Control - 802.1X, guest onboarding, and CoA (Change of Authorization) with Aruba ClearPass and/or Mist Access Assurance. | `NAC-Starter` (public kit + deployment guide); `lab-documentation/design/mist-clearpass-guest-coa/` |
-| 3 | **Campus / switching architecture** | Layer-2/Layer-3 campus design, VLAN (Virtual LAN) segmentation, EVPN-VXLAN growth path. | McKinney switching package (sanitized exemplar: `AEW` examples / `mckinney-isd/`) |
+| 3 | **Campus / switching architecture** | Layer-2/Layer-3 campus design, VLAN (Virtual LAN) segmentation, EVPN-VXLAN growth path. | Sanitized campus-switching exemplar (`NAC-Starter/examples/sample-engagement/`) |
 | 4 | **Secure remote access** | Juniper SRX / Secure Connect VPN, certificate authentication to AD (Active Directory). | *Doc to be written* (grounded in the vSRX Secure Connect lab) |
 
 ## 4. The backbone every workflow shares

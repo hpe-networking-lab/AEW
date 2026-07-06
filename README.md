@@ -10,7 +10,7 @@ The **machine-readable structure layer** for AI-assisted engineering engagements
 ## How it fits
 - **ACEM** = the methodology (how we work).
 - **AEW** = the structure/schema (the machine-readable shape of an engagement).
-- **Customer projects** (Love Field, McKinney) = instances that adopt `customer-template/` and carry a `Project_State.yaml`.
+- **Customer projects** (kept private) = instances that adopt `customer-template/` and carry a `Project_State.yaml`.
 - The Engineering Office drift-check validates each engagement's `Project_State.yaml` against `schemas/Project_State.schema.yaml`, surfacing phase/gate/blocker status automatically.
 
 Source of truth: GitHub `hpe-networking-lab/AEW` (cloned at `/lab/github/AEW`).

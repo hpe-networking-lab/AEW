@@ -17,9 +17,9 @@ work, on reinforcing layers:
 |---|---|---|
 | **Ground truth** | Inventory reconciled *from live* (Mist / ESXi / AD [Active Directory]): live is truth, the intent files are intent; a daily drift-check keeps them honest. | `lab-documentation/`, `automation-scripts/` (`reconcile_inventory.py`) |
 | **Reference architecture + standards** | Validated Juniper Mist template set (WLAN/RF/switch/site/firmware/PSK) + interop playbook. Every change follows the template playbook. | `mist-reference-designs/` |
-| **Engagement methodology** | A repeatable deliverable shape: Discovery -> ADR (Architecture Decision Record) -> Architecture Recommendation (executive-summary first) -> DESIGN -> topology drawing -> deployment/validation review. | `AEW/ENGAGEMENT-DOCUMENTATION-STANDARD.md`; exemplar `mckinney-isd/` |
+| **Engagement methodology** | A repeatable deliverable shape: Discovery -> ADR (Architecture Decision Record) -> Architecture Recommendation (executive-summary first) -> DESIGN -> topology drawing -> deployment/validation review. | `AEW/ENGAGEMENT-DOCUMENTATION-STANDARD.md`; sanitized exemplar `NAC-Starter/examples/sample-engagement/` |
 | **Governance layer** | AEW (AI Engineering Workbench): Project_State schema + validator + status-board scanner wired into drift-checking - the structure that makes many engagements trackable and inheritable. | `AEW/` |
-| **Productized knowledge** | Sanitized, customer-ready output: the public NAC-Starter kit and its sanitized worked example. | `NAC-Starter` (public), `AEW` / `mckinney-isd` (sanitized exemplars) |
+| **Productized knowledge** | Sanitized, customer-ready output: the public NAC-Starter kit and its sanitized worked example. | `NAC-Starter` (public) + its sanitized worked example `examples/sample-engagement/` |
 
 ## 2. Operating principles (guardrails)
 
@@ -86,7 +86,7 @@ accurate because nothing enters unvetted. See `PRACTICE-OVERVIEW.md` for the ful
   certs over LDAP; a real engineering finding, not a config workaround.
 - **Public NAC-Starter kit** with a guided wizard, a repository-scoped executor, and a sanitized worked
   example - customer-ready, no private-repository access required.
-- **Engagement documentation standard** codified and exemplified (McKinney sanitized with zero residual
+- **Engagement documentation standard** codified and exemplified (a real engagement sanitized with zero residual
   identifiers).
 
 ## 7. Roles & authority
