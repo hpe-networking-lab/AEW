@@ -26,3 +26,11 @@ coordinator promotes; every chat inherits on next self-ground.
 
 ## Style
 Concise and opinionated. Anything to copy/paste is a single clean fenced code block.
+
+## Engineering method (binding)
+
+At self-ground, read and follow `lab-documentation/reference/ENGINEERING-METHOD.md` — the
+order-of-authority discipline for any vendor-product work: vendor doc / reference config → the
+device's own outputs (metadata, traceoptions, stats are documentation) → controlled lab
+confirmation; never live trial-and-error, and hardest to hold under a deadline. Binding for
+build and operate chats alike; updates apply without re-issuing this grounding.
